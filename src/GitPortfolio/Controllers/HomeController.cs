@@ -21,14 +21,15 @@ namespace GitPortfolio.Controllers
 
         public IActionResult Github()
         {
-            return View();
+            var list = Data.GetRepos();
+            return View(list);
         }
 
-        public IActionResult Fetch()
-        {
-            var content = Data.GetRepos();
+        //public IActionResult Fetch()
+        //{
+        //    var content = Data.GetRepos();
             
-            return Json(content);
-        }
+        //    return Json(content);
+        //}
     }
 }

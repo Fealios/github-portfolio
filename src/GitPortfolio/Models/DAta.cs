@@ -11,7 +11,11 @@ namespace GitPortfolio.Models
 {
     public class Data
     {
-        public static JArray GetRepos()
+        public int stargazers_count { get; set; }
+        public string Name { get; set; }
+        public string Url { get; set; }
+
+        public static List<Data> GetRepos()
         {
             var client = new RestClient("https://api.github.com/users");
             var request = new RestRequest("Fealios/starred", Method.GET);
@@ -27,9 +31,12 @@ namespace GitPortfolio.Models
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
             var jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
+            var stringify = jsonResponse.ToString();
+            var repoList = JsonConvert.DeserializeObject<List<Data>>(stringify);
 
 
-            return jsonResponse;
+
+            return repoList;
         }
 
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)

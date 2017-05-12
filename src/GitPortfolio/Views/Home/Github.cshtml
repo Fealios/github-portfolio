@@ -1,2 +1,8 @@
 ﻿<h1>github port page</h1>
 
+@foreach(var repo in Model)
+{
+    <h1>@repo.Name</h1>
+    <h3>@repo.stargazers_count</h3>
+
+}
