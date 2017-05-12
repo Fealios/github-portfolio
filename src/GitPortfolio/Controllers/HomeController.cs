@@ -21,7 +21,8 @@ namespace GitPortfolio.Controllers
 
         public IActionResult Github()
         {
-            return View();
+            var content = Data.GetRepos();
+            return View(content);
         }
     }
 }
