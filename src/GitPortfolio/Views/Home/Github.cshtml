@@ -1,8 +1,17 @@
-﻿<h1>github port page</h1>
-
-@foreach(var repo in Model)
-{
-    <h1>@repo.Name</h1>
-    <h3>@repo.stargazers_count</h3>
-
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+<h1 id="top-title">github port page</h1>
+
+<div id="repo-max">
+    @foreach (var repo in Model)
+    {
+        <div class="repo">
+            <h1><a href="@repo.html_url" target="_blank">@repo.Name</a></h1>
+            <h3>Star count: @repo.stargazers_count</h3>
+
+        </div>
+    }
+
+</div>

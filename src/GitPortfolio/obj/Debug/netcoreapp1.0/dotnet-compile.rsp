@@ -211,7 +211,10 @@
 C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Program.cs
 C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Startup.cs
 C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Migrations\20170517182057_Initial.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Migrations\20170517182057_Initial.Designer.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Migrations\GitPortfolioContextModelSnapshot.cs
 C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\Data.cs
 C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\GitPortfolioContext.cs
-C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\Repo.cs
-C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\User.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\Visitor.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\ViewModels\VisitorViewModel.cs

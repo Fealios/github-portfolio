@@ -13,7 +13,7 @@ namespace GitPortfolio.Models
     {
         public int stargazers_count { get; set; }
         public string Name { get; set; }
-        public string Url { get; set; }
+        public string html_url { get; set; }
 
         public static List<Data> GetRepos()
         {
@@ -32,7 +32,7 @@ namespace GitPortfolio.Models
             JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
             var repoList = JsonConvert.DeserializeObject<List<Data>>(jsonResponse.ToString());
 
-            return repoList;
+            return Filter(repoList);
         }
 
         public static Task<IRestResponse> GetResponseContentAsync(RestClient theClient, RestRequest theRequest)
@@ -43,6 +43,26 @@ namespace GitPortfolio.Models
                 tcs.SetResult(response);
             });
             return tcs.Task;
+        }
+
+        public static List<Data> Filter(List<Data> unfiltered)
+        {
+            Data temp;
+            for(int write = 0; write < unfiltered.Count; write++)
+            {
+                for(int sort = 0; sort < unfiltered.Count - 1; sort++)
+                {
+                    if (unfiltered[sort].stargazers_count < unfiltered[sort + 1].stargazers_count)
+                    {
+                        temp = unfiltered[sort + 1];
+                        unfiltered[sort + 1] = unfiltered[sort];
+                        unfiltered[sort] = temp;
+                    }
+                }
+            }
+
+            List<Data> sorted = new List<Data> { unfiltered[0], unfiltered[1], unfiltered[2] };
+            return sorted;
         }
     }
 }

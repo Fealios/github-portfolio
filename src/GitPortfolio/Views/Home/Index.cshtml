@@ -1,1 +1,28 @@
-﻿<h1>made it to splash page</h1>
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using GitPortfolio.ViewModels
+@model VisitorViewModel
+
+<div id="master">
+    <h3 id="name">Melvin Gruschow</h3>
+    <h4 id="junior">-Junior Web Developer</h4>
+
+    <div id="other-links" class="hide">
+        <a href="Home/About">About</a> | <a href="Home/Github">Github Projects</a>
+    </div>
+    
+    <div id="visitor" class="form-group">
+        @using (Html.BeginForm("Visited", "Home", FormMethod.Post))
+        {
+            <p>If you're a visitor, leave your name!</p>
+            <label class="">Name:</label>
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            <br />
+            <input type="submit" class="btn btn-primary" value="Visited" />
+        }
+
+    </div>
+
+</div>

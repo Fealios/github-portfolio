@@ -30,8 +30,8 @@ namespace GitPortfolio
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            //services.AddEntityFramework()
-            //    .AddDbContext<GitPortfolioContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddEntityFramework()
+                .AddDbContext<GitPortfolioContext>(options => options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
             //services.AddIdentity<User, IdentityRole>()
             //    .AddEntityFrameworkStores<GitPortfolioContext>()
             //    .AddDefaultTokenProviders();

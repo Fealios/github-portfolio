@@ -1,0 +1,110 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Droid+Sans+Mono');
+body {
+    overflow-y: hidden;
+    padding-bottom: 1vh;
+}
+
+#master {
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    height: 60vh;
+    width: 50vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /*border: solid;*/
+}
+
+#name {
+    position: relative;
+    top: 2vh;
+    color: #696a6d;
+    font-size: 4.6vmin;
+    font-family: 'Bad Script', cursive;
+    font-weight: bold;
+
+}
+
+#junior {
+    position: relative;
+    font-size: 1.8vmin;
+    width: 16vw;
+    top: 3vh;
+    left: 1vw;
+    font-family: 'Droid Sans Mono', monospace;
+    animation: fade 1.1s ease-in;
+}
+
+#other-links {
+    position: relative;
+    top: 5vh;
+    left: 1vw;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#visitor {
+    position: absolute;
+    top: 25vh;
+    /*border: solid;*/
+}
+
+.form-control {
+    width: 20vw;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: normal;
+}
+
+/*------------- github ------------------*/
+
+#top-title {
+    color: #696a6d;
+    position: absolute;
+    top: 1vh;
+    left: 10vw;
+}
+
+#repo-max {
+    font-family: 'Droid Sans Mono', monospace;
+    height: 70vh;
+    width: 60vw;
+    position: absolute;
+    top: 10vh;
+    left: 25vw;
+}
+
+/*-------------------end github ------------------*/
+
+footer {
+    position: absolute;
+    top: 96vh;
+}
+
+.btn-primary {
+    background-color: #696a6d;
+}
+
+/*---------------------about -----------------------*/
+
+#about {
+    font-size: 2vh;
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    top: 12vh;
+    left: 25vw;
+}

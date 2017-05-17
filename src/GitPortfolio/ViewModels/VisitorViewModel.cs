@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GitPortfolio.Models
+namespace GitPortfolio.ViewModels
 {
-    public class User 
+    public class VisitorViewModel
     {
+        public string Name { get; set; }
     }
 }
