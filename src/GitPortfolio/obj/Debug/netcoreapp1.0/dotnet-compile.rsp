@@ -1,5 +1,5 @@
---temp-output:c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\obj\Debug\netcoreapp1.0\
---out:c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\bin\Debug\netcoreapp1.0\GitPortfolio.dll
+--temp-output:C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\obj\Debug\netcoreapp1.0\
+--out:C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\bin\Debug\netcoreapp1.0\GitPortfolio.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -207,11 +207,11 @@
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
 --reference:C:\Users\epicodus\.nuget\packages\System.Xml.XmlSerializer\4.0.11\ref\netstandard1.3\System.Xml.XmlSerializer.dll
---resource:"c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\obj\Debug\netcoreapp1.0\GitPortfoliodotnet-compile.deps.json",GitPortfolio.deps.json
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Program.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Startup.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Controllers\HomeController.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Models\DAta.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Models\GitPortfolioContext.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Models\Repo.cs
-c:\users\epicodus\desktop\GitPortfolio\src\GitPortfolio\Models\User.cs
+--resource:"C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\obj\Debug\netcoreapp1.0\GitPortfoliodotnet-compile.deps.json",GitPortfolio.deps.json
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Program.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Startup.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Controllers\HomeController.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\Data.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\GitPortfolioContext.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\Repo.cs
+C:\Users\epicodus\Desktop\github-portfolio\src\GitPortfolio\Models\User.cs

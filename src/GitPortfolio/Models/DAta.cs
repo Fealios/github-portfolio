@@ -21,8 +21,7 @@ namespace GitPortfolio.Models
             var request = new RestRequest("Fealios/starred", Method.GET);
             request.AddHeader("Accept", "application/vnd.github.v3+json");
             request.AddHeader("User-Agent", "Fealios");
-            request.RequestFormat = DataFormat.Json;
-            request.AddHeader("Authorization", "token 6b275ac48cd73c16813d51e41b80f87e1662fc78");
+            //request.AddHeader("Authorization", "token 6b275ac48cd73c16813d51e41b80f87e1662fc78");
 
             var response = new RestResponse();
 
@@ -30,11 +29,8 @@ namespace GitPortfolio.Models
             {
                 response = await GetResponseContentAsync(client, request) as RestResponse;
             }).Wait();
-            var jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
-            var stringify = jsonResponse.ToString();
-            var repoList = JsonConvert.DeserializeObject<List<Data>>(stringify);
-
-
+            JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(response.Content);
+            var repoList = JsonConvert.DeserializeObject<List<Data>>(jsonResponse.ToString());
 
             return repoList;
         }
